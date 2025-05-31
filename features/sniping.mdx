@@ -1,0 +1,190 @@
+---
+title: Sniping
+description: "A guide on how to snipe players and information on error messages"
+icon: "bullseye-pointer"
+---
+
+<Steps titleSize="h2">
+  <Step title="Get the username of your target">
+    Find the **Roblox username** (not display name) of the player you want to snipe.  
+    They **must be online and currently playing a game**.
+
+    ![Step 1 Image](/images/sniping/step1.png)
+  </Step>
+
+  <Step title="Get the game link/ID">
+    Copy the **URL/ID of the game** they **may** be playing.  
+    This tells the bot which game to search in.
+
+    ![Step 2 Image](https://i.postimg.cc/KjbQxKRb/IMG-9634.jpg)
+  </Step>
+
+  <Step title="Paste user and game info into the command">
+    Use the slash command `/snipe` with both the username and the game.
+
+    Format:
+    ```
+    /snipe target:[username] game:[game]
+    ```
+
+    Example:  
+    ```
+    /snipe target:bloxianalol game:11158043705
+    ```
+
+    ![Step 3 Image](https://i.postimg.cc/bY3gnw56/IMG-9643.png)
+  </Step>
+
+  <Step title="Wait for the bot to scan servers">
+    Bloxiana will scan hundreds (or thousands) of servers to find your target.  
+    Be patient—this can take several seconds (or up to 5 minutes) depending on the game.
+
+    ![Step 4 Image](https://i.postimg.cc/Gt2kKvfX/IMG-9638.jpg)
+  </Step>
+
+  <Step title="Join your target's server">
+    If found, click the **“Join”** button.  
+    - On desktop: Opens a Bloxiana join link.
+    - On mobile: Tap “Yes” when prompted to open in Roblox.
+
+    ![Step 5 Image](https://i.postimg.cc/B6WQZFHX/IMG-9639.jpg)
+  </Step>
+</Steps>
+
+---
+
+# Common Sniping Questions & Errors
+
+---
+
+## 🔍 "Search expired"
+
+The bot searched for 5 minutes but could not locate the user in the game.
+
+- The user may have left the game, joined a private server, or you entered the wrong game.
+- You’ll need to rerun the command.
+
+![Search expired](/images/sniping/error-search-expired.png)
+
+---
+
+## 🧠 What is "Deepsearch"?
+
+If a quick scan doesn’t find the player, the bot activates **Deepsearch**.
+
+- It continues searching across more servers.
+- Takes longer, but increases the chance of finding someone in large/private lobbies.
+- You’ll see a message like: `Deepsearch enabled... Scanning further.`
+
+![Deepsearch active](https://placehold.co/600x150?text=Deepsearch+Mode+Active)
+
+---
+
+## ❌ "Player not in game"
+
+The bot couldn’t verify that the user is currently in a game.
+
+- Double-check that they are online and actively playing.
+
+![Player not in game](/images/sniping/error-not-in-game.png)
+
+---
+
+## ❌ "Failed to fetch user information"
+
+This usually means:
+
+- The username doesn't exist
+- You entered a display name instead of a username
+
+![User not found](/images/sniping/error-user-not-found.png)
+
+---
+
+## ✅ "Player found" (Public Joins)
+
+If the user’s joins are public, you’ll get a direct link to join their current session—even if the game doesn't match your input.
+
+- This override happens to help you snipe quickly regardless of game input.
+
+![Player found with public joins](/images/sniping/success-public-joins.png)
+
+---
+
+## 🔁 "Retrying..."
+
+The bot is reattempting the search due to:
+
+- Temporary data delays
+- The user rapidly joining/leaving servers
+
+Just wait—it will continue searching.
+
+![Retrying scan](https://placehold.co/600x150?text=Retrying+Scan)
+
+---
+
+## ❌ "Player left game"
+
+The player left the game during the search process.
+
+- Try sniping them again when they're in another game.
+
+![Player left game](/images/sniping/error-player-left.png)
+
+---
+
+## ❌ "No match found"
+
+The bot was unable to locate any server with the specified user.
+
+- Double-check username and game input.
+- It may take a second attempt with Deepsearch.
+
+![No match found](/images/sniping/error-no-match-found.png)
+
+---
+
+## ❌ "Currently being sniped by another user"
+
+Only one user can snipe a target at a time. Try again later.
+
+![Being sniped by another user](/images/sniping/error-being-sniped-by-another.png)
+
+---
+
+## 🚫 "Game blacklisted"
+
+This game cannot be sniped due to performance concerns.
+
+- Usually applies to massive games (like Grow a Garden) that would slow down the system for everyone.
+
+![Game blacklisted](/images/sniping/error-game-blacklisted.png)
+
+---
+
+## 🚫 "User is blacklisted"
+
+This user is protected from being sniped.
+
+- Blacklisted users are often developers, content creators, or users being harassed by others using the bot.
+
+![User blacklisted](/images/sniping/error-user-blacklisted.png)
+
+---
+
+## ❌ "Canceled"
+
+The snipe was canceled by the user who initiated it.
+
+- Only the initiator can cancel the process.
+
+![Snipe canceled](/images/sniping/snipe-canceled.png)
+
+---
+
+Need more help? Join the Bloxiana support Discord and share:
+
+- The command you used  
+- The error message you got  
+- Screenshot if possible

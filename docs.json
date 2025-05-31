@@ -1,102 +1,85 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "Bloxiana",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#658a95",
+    "light": "#95b6bd",
+    "dark": "#658a95"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "favicon.ico",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
+        "group": "Get Started",
+        "pages": [
+          "index",
+          "quickstart"
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "Features",
+        "pages": [
+          "features/sniping"
+        ]
+      },
+      {
+        "group": "Server Configuration",
+        "pages": [
+          "configuration/user-tracking"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://i.imgur.com/KJR0HfD.png",
+    "dark": "https://i.imgur.com/KJR0HfD.png"
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": true
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Support Server",
+        "href": "https://discord.gg/bloxiana"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Home",
+      "href": "https://bloxiana.lol"
     }
+  },
+  "seo": {
+    "metatags": {
+      "theme-color": "#658a95",
+      "og:site_name": "Bloxiana"
+    },
+    "indexing": "navigable"
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.gg/bloxiana"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/commands",
+      "destination": "https://bloxiana.lol/commands"
+    },
+    {
+      "source": "/status",
+      "destination": "https://bloxiana.lol/status"
+    },
+    {
+      "source": "/invite",
+      "destination": "https://bloxiana.lol/invite"
+    },
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/bloxiana"
+    }
+  ]
 }
